@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- IconSax -->
+  <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- Layout CSS -->
+  <link rel="stylesheet" href="../assets/css/layout-category.css">
+  <!-- Home CSS -->
+  <link rel="stylesheet" href="../assets/css/home.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header">
+        <div class="header-logo">
+          <a href="/">
+            <img src="../assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="header-search">
+          <form action="">
+            <i class="iconsax header-search-icon" icon-name="search-normal-2"></i>
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+        <div class="header-options">
+          <div class="header-options-item">
+            <i class="iconsax" icon-name="shopping-cart"></i>
+            <span class="header-option-item-text">Giỏ hàng</span>
+          </div>
+          <div class="header-options-item">
+            <i class="iconsax" icon-name="user-2"></i>
+            <span class="header-option-item-text">Tài khoản</span>
+          </div>
+          <!-- Language Selector -->
+          <div class="header-options-item">
+            <div class="language-selector">
+              <button id="current-lang">
+                <img src="../assets/img/flag-vn-16-12.png" alt="Vietnamese Flag">
+                <i class="iconsax" icon-name="chevron-down"></i>
+              </button>
+              <ul id="lang-options">
+                <li data-lang="vn">
+                  <img src="../assets/img/flag-vn-16-12.png" alt="Vietnamese Flag">
+                  <span>Tiếng Việt</span>
+                </li>
+                <li data-lang="en">
+                  <img src="../assets/img/flag-us-16-12.png" alt="English Flag">
+                  <span>English</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="">Iphone</a>
+          </li>
+          <li>
+            <a href="">Ipad</a>
+          </li>
+          <li>
+            <a href="">Mac</a>
+          </li>
+          <li>
+            <a href="">Watch</a>
+          </li>
+          <li>
+            <a href="">Phu kien</a>
+          </li>
+          <li>
+            <a href="">Am thanh</a>
+          </li>
+          <li>
+            <a href="">Camera</a>
+          </li>
+          <li>
+            <a href="">Gia dung</a>
+          </li>
+          <li>
+            <a href="">May luot</a>
+          </li>
+          <li>
+            <a href="">Tin tuc</a>
+          </li>
+          <li>
+            <a href="">Dich vu</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main-content">
+        <!-- Category Banner -->
+        <div class="category-banner-wrapper">
+          <div class="category-banner">
+            <div class="category-banner-item">
+              <a href="/">
+                <img src="../assets/img/slide/image1.png" alt="banner-1">
+              </a>
+            </div>
+            <div class="category-banner-item">
+              <a href="/">
+                <img src="../assets/img/slide/image2.png" alt="banner-2">
+              </a>
+            </div>
+            <div class="category-banner-item">
+              <a href="/">
+                <img src="../assets/img/slide/image3.jpg" alt="banner-3">
+              </a>
+            </div>
+            <div class="category-banner-item">
+              <a href="/">
+                <img src="../assets/img/slide/image1.png" alt="banner-4">
+              </a>
+            </div>
+            <div class="category-banner-item">
+              <a href="/">
+                <img src="../assets/img/slide/image2.png" alt="banner-5">
+              </a>
+            </div>
+            <div class="category-banner-item">
+              <a href="/">
+                <img src="../assets/img/slide/image3.jpg" alt="banner-6">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Category Banner -->
+        <div class="categories-filter">
+          <div class="categories-filter-list">
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/gaming-gear.png" alt="category-1">
+                </div>
+                <h3 class="categories-filter-item-text">Gaming Gear</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/cuongluc.png" alt="category-2">
+                </div>
+                <h3 class="categories-filter-item-text">Cuộc lạc</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/camera.png" alt="category-3">
+                </div>
+                <h3 class="categories-filter-item-text">Camera</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/keyboards.png" alt="category-4">
+                </div>
+                <h3 class="categories-filter-item-text">Bàn phím</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/sacduphong.png" alt="category-5">
+                </div>
+                <h3 class="categories-filter-item-text">Sạc dự phòng</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/gaming-gear.png" alt="category-6">
+                </div>
+                <h3 class="categories-filter-item-text">Phụ kiện</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/camera.png" alt="category-7">
+                </div>
+                <h3 class="categories-filter-item-text">Iphone</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/keyboards.png" alt="category-8">
+                </div>
+                <h3 class="categories-filter-item-text">Bàn phím</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/gaming-gear.png" alt="category-6">
+                </div>
+                <h3 class="categories-filter-item-text">Phụ kiện</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/camera.png" alt="category-7">
+                </div>
+                <h3 class="categories-filter-item-text">Iphone</h3>
+              </a>
+            </div>
+            <div class="categories-filter-item-wrapper">
+              <a href="/" class="categories-filter-item">
+                <div class="categories-filter-item-img">
+                  <img src="../assets/img/categories-filter/keyboards.png" alt="category-8">
+                </div>
+                <h3 class="categories-filter-item-text">Bàn phím</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Categories Filter -->
+        <!-- Brand List -->
+        <div class="brand-list-wrapper">
+          <div class="brand-list-title">Chọn theo thương hiệu</div>
+          <div class="brand-list">
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/apple.jpeg" alt="brand-1">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/baseus.png" alt="brand-2">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/anket.png" alt="brand-3">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/apple.jpeg" alt="brand-1">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/baseus.png" alt="brand-2">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/anket.png" alt="brand-3">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/sony.png" alt="brand-4">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/xiaomi.png" alt="brand-5">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/apple.jpeg" alt="brand-6">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/baseus.png" alt="brand-7">
+              </a>
+            </div>
+            <div class="brand-item-wrapper">
+              <a href="/" class="brand-item">
+                <img src="../assets/img/brands/anket.png" alt="brand-8">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Brand List -->
+        <!-- Order -->
+        <div class="order-wrapper">
+          <div class="order">
+            <h4 class="order-title">Sắp xếp theo</h4>
+            <div class="order-options">
+              <a href="/" class="order-option">
+                <i class="iconsax rotate-180" icon-name="sort"></i>
+                Giá thấp đến cao
+              </a>
+              <a href="/" class="order-option">
+                <i class="iconsax" icon-name="sort" ></i>
+                Giá cao đến thấp
+              </a>
+              <a href="/" class="order-option">
+                <i class="iconsax" icon-name="bar-graph-4"></i>
+                Mới nhất
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Order -->
+        <!-- Product List -->
+        <div class="product-list-wrapper">
+          <div class="product">
+            <div class="product-list">
+              <div class="product-item">
+                <div class="product-item-header">
+                  <span class="product-item-header-ratio">Giảm 5%</span>
+                  <span class="product-item-header-tag green">Trả góp 0%</span>
+                </div>
+                <a href="/" class="product-item-wrapper-link">
+                  <div class="product-item-img">
+                    <img src="../assets/img/product/iphone16e.png" alt="iphone">
+                  </div>
+                  <div class="product-item-title">Iphone 16e</div>
+                  <div class="product-item-price">
+                    <span class="price-new">8.000.000đ</span>
+                    <span class="price-old">10.000.000đ</span>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <div class="product-item-header">
+                  <span class="product-item-header-ratio">Giảm 5%</span>
+                  <span class="product-item-header-tag red">Trả góp 0%</span>
+                </div>
+                <a href="/" class="product-item-wrapper-link">
+                  <div class="product-item-img">
+                    <img src="../assets/img/product/iphone16e.png" alt="iphone">
+                  </div>
+                  <div class="product-item-title">Iphone 16e</div>
+                  <div class="product-item-price">
+                    <span class="price-new">8.000.000đ</span>
+                    <span class="price-old">10.000.000đ</span>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <div class="product-item-header">
+                  <span class="product-item-header-ratio">Giảm 5%</span>
+                  <span class="product-item-header-tag blue">Trả góp 0%</span>
+                </div>
+                <a href="/" class="product-item-wrapper-link">
+                  <div class="product-item-img">
+                    <img src="../assets/img/product/iphone16e.png" alt="iphone">
+                  </div>
+                  <div class="product-item-title">Iphone 16e</div>
+                  <div class="product-item-price">
+                    <span class="price-new">8.000.000đ</span>
+                    <span class="price-old">10.000.000đ</span>
+                  </div>
+                </a>
+              </div>
+              <div class="product-item">
+                <div class="product-item-header">
+                  <span class="product-item-header-ratio">Giảm 5%</span>
+                  <span class="product-item-header-tag blue">Trả góp 0%</span>
+                </div>
+                <a href="/" class="product-item-wrapper-link">
+                  <div class="product-item-img">
+                    <img src="../assets/img/product/iphone16e.png" alt="iphone">
+                  </div>
+                  <div class="product-item-title">Iphone 16e</div>
+                  <div class="product-item-price">
+                    <span class="price-new">8.000.000đ</span>
+                    <span class="price-old">10.000.000đ</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="pagination-wrapper">
+              <div class="pagination">
+                <a href="/" class="pagination-item hidden">
+                  <i class="iconsax" icon-name="chevron-left"></i>
+                </a>
+                <a href="/" class="pagination-item active">1</a>
+                <a href="/" class="pagination-item">2</a>
+                <a href="/" class="pagination-item">3</a>
+                <a href="/" class="pagination-item">4</a>
+                <a href="/" class="pagination-item">
+                  <i class="iconsax" icon-name="chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Product List -->
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="footer-block follow-us">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="../assets/img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="topic">
+            <p class="topic-text">
+              Năm 2020, ShopDunk trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa hàng tiêu chuẩn và
+              Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple cho người dùng Việt
+              Nam.
+            </p>
+            <div class="contact">
+              <h4>Tong dai ho tro: </h4>
+              <div class="contact-item">
+                <span class="contact-item-title">Hotline: </span>
+                <a href="tel:1900558868" class="contact-item-value">1900.6626 (08:00 - 22:00)</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-title">Hotline: </span>
+                <a href="tel:1900558868" class="contact-item-value">1900.6626 (08:00 - 22:00)</a>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/fb-icon.png" alt="facebook">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/tiktok-icon.png" alt="instagram">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/youtube-icon.png" alt="youtube">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/zalo-icon.png" alt="zalo">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-block information">
+          <h5 class="information-title">Thông tin</h5>
+          <ul class="information-list">
+            <li class="information-item"><a href="/">Newfeeds</a></li>
+            <li class="information-item"><a href="/">Giới thiệu</a></li>
+            <li class="information-item"><a href="/">Check </a></li>
+            <li class="information-item"><a href="/">Phương thức thanh toán</a></li>
+            <li class="information-item"><a href="/">Thuê điểm bán lẻ</a></li>
+            <li class="information-item"><a href="/">Bảo hành và sửa chữa</a></li>
+            <li class="information-item"><a href="/">Tuyển dụng</a></li>
+            <li class="information-item"><a href="/">Đánh giá</a></li>
+            <li class="information-item"><a href="/">Tra cứu hoá đơn điện tử</a></li>
+          </ul>
+        </div>
+        <div class="footer-block customer-service">
+          <h5 class="customer-service-title">Chính sách</h5>
+          <ul class="customer-service-list">
+            <li class="customer-service-item"><a href="/">Thu cũ đổi mới</a></li>
+            <li class="customer-service-item"><a href="/">Giao hàng</a></li>
+            <li class="customer-service-item"><a href="/">Giao hàng (ZaloPay)</a></li>
+            <li class="customer-service-item"><a href="/">Huỷ giao dịch</a></li>
+            <li class="customer-service-item"><a href="/">Đổi trả</a></li>
+            <li class="customer-service-item"><a href="/">Bảo hành</a></li>
+            <li class="customer-service-item"><a href="/">Dịch vụ</a></li>
+            <li class="customer-service-item"><a href="/">Giải quyết khiếu nại</a></li>
+            <li class="customer-service-item"><a href="/">Bảo mật thông tin</a></li>
+            <li class="customer-service-item"><a href="/">Thanh táon VNPay</a></li>
+          </ul>
+        </div>
+        <div class="footer-block contact">
+          <h5 class="contact-title">Địa chỉ & Liên hệ</h5>
+          <ul class="contact-list">
+            <li class="contact-item"><a href="/">Tài khoản của tôi</a></li>
+            <li class="contact-item"><a href="/">Đơn đặt hàng</a></li>
+            <li class="contact-item"><a href="/">Tìm store trên gg map</a></li>
+            <li class="contact-item"><a href="/">Hệ thống cửa hàng</a></li>
+            <li class="contact-item"><a href="/">Mua hàng</a></li>
+            <li class="contact-item"><a href="/">Chi nhành: TP.HCM</a></li>
+            <li class="contact-item"><a href="/">Doanh nghiệp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-lower">
+        <p class="footer-lower-text">
+          © 2016 Công ty Cổ Phần HESMAN Việt Nam GPDKKD: 0107465657 do Sở KH & ĐT TP. Hà Nội cấp ngày 08/06/2016.
+          <br />
+          Địa chỉ: Số 76 Thái Hà, phường Trung Liệt, quận Đống Đa, thành phố Hà Nội, Việt Nam
+          <br />
+          Đại diện pháp luật: PHẠM MẠNH HÒA | ĐT: 0247.305.9999 | Email: lienhe@shopdunk.com
+        </p>
+        <div class="footer-lower-logo">
+          <img src="../assets/img/bocongthuong.png" alt="Logo Bộ công thương">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.category-banner').slick({
+        arrows: true,
+        dots: true,
+      });
+    });
+  </script>
+</body>
+
+</html>
