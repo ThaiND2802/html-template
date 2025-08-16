@@ -1,5 +1,5 @@
 .container {
-  background-color: #FFF
+  background-color: #FFF;
 }
 
 header {
@@ -66,14 +66,14 @@ header {
   top: 5px;
   z-index: 10;
   fill: red;
-  color: #1D1D1F;
+  color: #1d1d1f;
 }
 
 .header-search form input {
   width: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   border: unset;
-  color: #1D1D1F;
+  color: #1d1d1f;
   font-size: 16px;
   border-radius: 10px;
   padding-left: 42px;
@@ -122,7 +122,7 @@ header {
   cursor: pointer;
 
   .iconsax {
-    color: #FFF;
+    color: #fff;
     font-size: 15px !important;
   }
 }
@@ -188,7 +188,7 @@ nav ul li a {
   font-size: 15px;
   line-height: 20px;
   padding: 14px 16px;
-  color: #D2D2D7;
+  color: #d2d2d7;
   cursor: pointer;
 }
 
@@ -201,11 +201,11 @@ nav ul li:last-child a {
 }
 
 nav ul li a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 2px;
-  text-decoration-color: #FFFFFF;
+  text-decoration-color: #ffffff;
 }
 
 /* End Nav */
@@ -226,7 +226,7 @@ nav ul li a:hover {
 .footer {
   width: 100%;
   text-align: center;
-  background-color: #1D1D1F;
+  background-color: #1d1d1f;
 }
 /* Footer Upper */
 .footer-upper {
@@ -273,14 +273,13 @@ nav ul li a:hover {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  color: #D2D2D7;
+  color: #d2d2d7;
   padding: 8px 0px;
   margin: 10px 0px;
 }
 .follow-us .topic .contact {
   background-color: #ecf0f1;
   border-radius: 6px;
-
 }
 .follow-us .topic .contact h4 {
   padding: 18px 8px;
@@ -306,7 +305,7 @@ nav ul li a:hover {
 .follow-us .topic .contact .contact-item .contact-item-value {
   font-size: 18px;
   font-weight: bold;
-  color: #06C;
+  color: #06c;
 }
 .follow-us .social {
   position: inherit;
@@ -334,7 +333,7 @@ nav ul li a:hover {
   font-weight: bolder;
   line-height: 21px;
   margin-bottom: 15px;
-  color: #D2D2D7;
+  color: #d2d2d7;
 }
 .information .information-list {
   display: flex;
@@ -345,7 +344,7 @@ nav ul li a:hover {
 .information .information-list .information-item a {
   font-size: 13px;
   line-height: 28px;
-  color: #86868B;
+  color: #86868b;
 }
 /* Footer Upper Customer Service */
 .footer-upper .footer-block.customer-service {
@@ -357,7 +356,7 @@ nav ul li a:hover {
   font-weight: bolder;
   line-height: 21px;
   margin-bottom: 15px;
-  color: #D2D2D7;
+  color: #d2d2d7;
 }
 .customer-service .customer-service-list {
   display: flex;
@@ -368,7 +367,7 @@ nav ul li a:hover {
 .customer-service .customer-service-list .customer-service-item a {
   font-size: 13px;
   line-height: 28px;
-  color: #86868B;
+  color: #86868b;
 }
 /* Footer Upper Contact */
 .footer-upper .footer-block.contact {
@@ -380,7 +379,7 @@ nav ul li a:hover {
   font-weight: bolder;
   line-height: 21px;
   margin-bottom: 15px;
-  color: #D2D2D7;
+  color: #d2d2d7;
 }
 .contact .contact-list {
   display: flex;
@@ -391,7 +390,7 @@ nav ul li a:hover {
 .contact .contact-list .contact-item a {
   font-size: 13px;
   line-height: 28px;
-  color: #86868B;
+  color: #86868b;
 }
 /* End Footer Upper */
 /* Footer Lower */
