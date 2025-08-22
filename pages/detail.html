@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- IconSax -->
+  <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- Layout CSS -->
+  <link rel="stylesheet" href="../assets/css/layout-detail.css">
+  <!-- Detail CSS -->
+  <link rel="stylesheet" href="../assets/css/detail.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="header">
+        <div class="header-logo">
+          <a href="/">
+            <img src="../assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="header-search">
+          <form action="">
+            <i class="iconsax header-search-icon" icon-name="search-normal-2"></i>
+            <input type="text" placeholder="Search">
+          </form>
+        </div>
+        <div class="header-options">
+          <div class="header-options-item">
+            <i class="iconsax" icon-name="shopping-cart"></i>
+            <span class="header-option-item-text">Giỏ hàng</span>
+          </div>
+          <div class="header-options-item">
+            <i class="iconsax" icon-name="user-2"></i>
+            <span class="header-option-item-text">Tài khoản</span>
+          </div>
+          <!-- Language Selector -->
+          <div class="header-options-item">
+            <div class="language-selector">
+              <button id="current-lang">
+                <img src="../assets/img/flag-vn-16-12.png" alt="Vietnamese Flag">
+                <i class="iconsax" icon-name="chevron-down"></i>
+              </button>
+              <ul id="lang-options">
+                <li data-lang="vn">
+                  <img src="../assets/img/flag-vn-16-12.png" alt="Vietnamese Flag">
+                  <span>Tiếng Việt</span>
+                </li>
+                <li data-lang="en">
+                  <img src="../assets/img/flag-us-16-12.png" alt="English Flag">
+                  <span>English</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="">Iphone</a>
+          </li>
+          <li>
+            <a href="">Ipad</a>
+          </li>
+          <li>
+            <a href="">Mac</a>
+          </li>
+          <li>
+            <a href="">Watch</a>
+          </li>
+          <li>
+            <a href="">Phu kien</a>
+          </li>
+          <li>
+            <a href="">Am thanh</a>
+          </li>
+          <li>
+            <a href="">Camera</a>
+          </li>
+          <li>
+            <a href="">Gia dung</a>
+          </li>
+          <li>
+            <a href="">May luot</a>
+          </li>
+          <li>
+            <a href="">Tin tuc</a>
+          </li>
+          <li>
+            <a href="">Dich vu</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main-content">
+        <!-- Detail Content -->
+        <div class="detail-content-wapper">
+          <div class="detail-content">
+            <div class="detail-pictures active" id="detail-pictures-1">
+              <div class="detail-picture">
+                <a href="/">
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall1">
+                </a>
+              </div>
+              <div class="detail-gallery" id='detail-gallery-1'>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall1">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall2.jpeg" alt="marshall2">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall3.jpeg" alt="marshall3">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall4">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall2.jpeg" alt="marshall5">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall3.jpeg" alt="marshall6">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall7">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall2.jpeg" alt="marshall8">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall3.jpeg" alt="marshall9">
+                </div>
+              </div>
+            </div>
+            <div class="detail-pictures" id="detail-pictures-2">
+              <div class="detail-picture">
+                <a href="/">
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall1">
+                </a>
+              </div>
+              <div class="detail-gallery" id='detail-gallery-2'>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall1">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall2.jpeg" alt="marshall2">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall3.jpeg" alt="marshall3">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall4">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall2.jpeg" alt="marshall5">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall3.jpeg" alt="marshall6">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall1.jpeg" alt="marshall7">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall2.jpeg" alt="marshall8">
+                </div>
+                <div class='detail-gallery-item'>
+                  <img src="../assets/img/detail/marshall3.jpeg" alt="marshall9">
+                </div>
+              </div>
+            </div>
+            <div class="detail-overview">
+              <div class="detail-overview-title">
+                <h1>Tai nghe chụp tai Sony WHULT900N</h1>
+              </div>
+              <div class="detail-overview-price-wrapper">
+                <div class="detail-overview-price">
+                  <span class="detail-overview-price-current">4.200.000 VNĐ</span>
+                  <span class="detail-overview-price-old">5.200.000 VNĐ</span>
+                </div>
+                <div class="detail-overview-vat">
+                  (Đã bao gồm VAT)
+                </div>
+              </div>
+              <div class="detail-overview-color-wrapper">
+                <h5 class="detail-overview-color-title">Màu sắc</h5>
+                <div class="detail-overview-color-selector">
+                  <a data-target="detail-pictures-1" class="detail-overview-color-selector-item active">
+                    <div class="detail-overview-color-selector-item-color" style="background-color: #000;"></div>
+                  </a>
+                  <a data-target="detail-pictures-2" class="detail-overview-color-selector-item">
+                    <div class="detail-overview-color-selector-item-color" style="background-color: #FFF;"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="detail-overview-short-description-wrapper">
+                <div class="detail-overview-short-description">
+                  <div class="detail-overview-short-description-title">
+                    <i class="iconsax" icon-name="gift"></i>
+                    <h5>Ưu đãi</h5>
+                  </div>
+                  <div class="detail-overview-short-description-content">
+                    <div class="detail-overview-short-description-content-item">
+                      <div class="detail-overview-short-description-content-item-banner">
+                        <img src="../assets/img/detail/short-banner.png" alt="banner-1">
+                      </div>
+                    </div>
+                    <div class="detail-overview-short-description-content-item">
+                      <div class="detail-overview-short-description-content-item-timmer">
+                        <span>
+                          ( Khuyến mãi dự kiến áp dụng
+                          <strong>
+                            đến 23h59 | 31/8/2025
+                          </strong>
+                          )
+                        </span>
+                      </div>
+                    </div>
+                    <div class="detail-overview-short-description-content-item">
+                      <div class="detail-overview-short-description-content-item-main">
+                        <div class="detail-overview-short-description-content-item-main-upper">
+                          <div class="detail-overview-short-description-content-item-main-upper-item">
+                            <i class="iconsax" icon-name="tick-circle"></i>
+                            <span class="detail-overview-short-description-content-item-main-upper-item-text">
+                              Tặng voucher trị giá 1.500.000đ khi mua kèm iPhone 15 series, iPhone 16 series, iPad A16,
+                              iPad Air M3, MacBook Air M4.
+                            </span>
+                          </div>
+                          <div class="detail-overview-short-description-content-item-main-upper-item">
+                            <i class="iconsax" icon-name="tick-circle"></i>
+                            <span class="detail-overview-short-description-content-item-main-upper-item-text">
+                              Tặng thêm 6 tháng bảo hành*
+                            </span>
+                          </div>
+                        </div>
+                        <div class="detail-overview-short-description-content-item-main-lower">
+                          <span class="detail-overview-short-description-content-item-main-lower-item">
+                            *Áp dụng cho khách hàng có tài khoản My Sony, sản phẩm phải được kích hoạt bảo
+                            hành và đăng ký vào tài khoản My Sony trong vòng 30 ngày và không quá ngày
+                            31/7/2026
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="detail-overview-button-wrapper">
+                <div class="detail-overview-primary-button">
+                  <button>Mua ngay</button>
+                </div>
+                <div class="detail-overview-secondary-button-wrapper">
+                  <a class="detail-overview-secondary-button">
+                    <h4 class="detail-overview-secondary-button-title">Mua trả góp 0%</h4>
+                    <h5 class="detail-overview-secondary-button-subtitle">Qua công ty tài chính</h5>
+                  </a>
+                  <a class="detail-overview-secondary-button">
+                    <h4 class="detail-overview-secondary-button-title">Trả góp 0% qua thẻ</h4>
+                    <h5 class="detail-overview-secondary-button-subtitle">Visa, Mastercard, JCB, Amex</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-description">
+            <div class="detail-description-selector">
+              <a class="detail-description-selector-item active" data-target="description-mo-ta">
+                Mô tả sản phẩm
+              </a>
+              <a class="detail-description-selector-item" data-target="description-thong-so">
+                Thông số kỹ thuật
+              </a>
+              <a class="detail-description-selector-item" data-target="description-chi-tiet">
+                Chi tiết sản phẩm
+              </a>
+            </div>
+            <div class="detail-description-content">
+              <!-- Region description content-->
+              <div class="detail-description-content-item active" id="description-mo-ta">
+                <h5>Mô tả sản phẩm</h5>
+                <p>Việc gắn Bộ Pin MagSafe chỉ trong tích tắc. Thiết kế nhỏ gọn, trực quan giúp sạc khi di chuyển dễ dàng.
+                  Các nam châm được căn chỉnh hoàn hảo giữ cho nó được gắn vào iPhone của bạn – cung cấp khả năng sạc
+                  không dây an toàn và đáng tin cậy. Và nó tự động sạc, vì vậy không cần phải bật hoặc tắt nó. Không có sự
+                  can thiệp vào thẻ tín dụng hoặc fobs chính của bạn.
+              </div>
+              <div class="detail-description-content-item" id="description-thong-so">
+                <h5>Thông số kỹ thuật</h5>
+                <p></p>
+              </div>
+              <div class="detail-description-content-item" id="description-chi-tiet">
+                <h5>Chi tiết sản phẩm</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Detail Content -->
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="footer-block follow-us">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="../assets/img/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="topic">
+            <p class="topic-text">
+              Năm 2020, ShopDunk trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa hàng tiêu chuẩn và
+              Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple cho người dùng Việt
+              Nam.
+            </p>
+            <div class="contact">
+              <h4>Tong dai ho tro: </h4>
+              <div class="contact-item">
+                <span class="contact-item-title">Hotline: </span>
+                <a href="tel:1900558868" class="contact-item-value">1900.6626 (08:00 - 22:00)</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-item-title">Hotline: </span>
+                <a href="tel:1900558868" class="contact-item-value">1900.6626 (08:00 - 22:00)</a>
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/fb-icon.png" alt="facebook">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/tiktok-icon.png" alt="instagram">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/youtube-icon.png" alt="youtube">
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="">
+                  <img src="../assets/img/zalo-icon.png" alt="zalo">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-block information">
+          <h5 class="information-title">Thông tin</h5>
+          <ul class="information-list">
+            <li class="information-item"><a href="/">Newfeeds</a></li>
+            <li class="information-item"><a href="/">Giới thiệu</a></li>
+            <li class="information-item"><a href="/">Check </a></li>
+            <li class="information-item"><a href="/">Phương thức thanh toán</a></li>
+            <li class="information-item"><a href="/">Thuê điểm bán lẻ</a></li>
+            <li class="information-item"><a href="/">Bảo hành và sửa chữa</a></li>
+            <li class="information-item"><a href="/">Tuyển dụng</a></li>
+            <li class="information-item"><a href="/">Đánh giá</a></li>
+            <li class="information-item"><a href="/">Tra cứu hoá đơn điện tử</a></li>
+          </ul>
+        </div>
+        <div class="footer-block customer-service">
+          <h5 class="customer-service-title">Chính sách</h5>
+          <ul class="customer-service-list">
+            <li class="customer-service-item"><a href="/">Thu cũ đổi mới</a></li>
+            <li class="customer-service-item"><a href="/">Giao hàng</a></li>
+            <li class="customer-service-item"><a href="/">Giao hàng (ZaloPay)</a></li>
+            <li class="customer-service-item"><a href="/">Huỷ giao dịch</a></li>
+            <li class="customer-service-item"><a href="/">Đổi trả</a></li>
+            <li class="customer-service-item"><a href="/">Bảo hành</a></li>
+            <li class="customer-service-item"><a href="/">Dịch vụ</a></li>
+            <li class="customer-service-item"><a href="/">Giải quyết khiếu nại</a></li>
+            <li class="customer-service-item"><a href="/">Bảo mật thông tin</a></li>
+            <li class="customer-service-item"><a href="/">Thanh táon VNPay</a></li>
+          </ul>
+        </div>
+        <div class="footer-block contact">
+          <h5 class="contact-title">Địa chỉ & Liên hệ</h5>
+          <ul class="contact-list">
+            <li class="contact-item"><a href="/">Tài khoản của tôi</a></li>
+            <li class="contact-item"><a href="/">Đơn đặt hàng</a></li>
+            <li class="contact-item"><a href="/">Tìm store trên gg map</a></li>
+            <li class="contact-item"><a href="/">Hệ thống cửa hàng</a></li>
+            <li class="contact-item"><a href="/">Mua hàng</a></li>
+            <li class="contact-item"><a href="/">Chi nhành: TP.HCM</a></li>
+            <li class="contact-item"><a href="/">Doanh nghiệp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-lower">
+        <p class="footer-lower-text">
+          © 2016 Công ty Cổ Phần HESMAN Việt Nam GPDKKD: 0107465657 do Sở KH & ĐT TP. Hà Nội cấp ngày 08/06/2016.
+          <br />
+          Địa chỉ: Số 76 Thái Hà, phường Trung Liệt, quận Đống Đa, thành phố Hà Nội, Việt Nam
+          <br />
+          Đại diện pháp luật: PHẠM MẠNH HÒA | ĐT: 0247.305.9999 | Email: lienhe@shopdunk.com
+        </p>
+        <div class="footer-lower-logo">
+          <img src="../assets/img/bocongthuong.png" alt="Logo Bộ công thương">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/js/layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../assets/js/detail.js"></script>
+</body>
+
+</html>

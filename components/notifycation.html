@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification System</title>
+  <!-- IconSax -->
+  <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- Layout CSS -->
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <!-- Notification CSS -->
+  <link rel="stylesheet" href="../assets/css/notification.css">
+  <style>
+    /* Demo Buttons */
+    .demo-container {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .demo-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .demo-btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      font-size: 14px;
+    }
+
+    .demo-btn.success {
+      background: #52c41a;
+      color: white;
+    }
+
+    .demo-btn.success:hover {
+      background: #389e0d;
+    }
+
+    .demo-btn.error {
+      background: #ff4d4f;
+      color: white;
+    }
+
+    .demo-btn.error:hover {
+      background: #cf1322;
+    }
+
+    .demo-btn.warning {
+      background: #faad14;
+      color: white;
+    }
+
+    .demo-btn.warning:hover {
+      background: #d48806;
+    }
+
+    .demo-btn.info {
+      background: #1890ff;
+      color: white;
+    }
+
+    .demo-btn.info:hover {
+      background: #096dd9;
+    }
+
+    .demo-btn.clear {
+      background: #f5f5f5;
+      color: #595959;
+      border: 1px solid #d9d9d9;
+    }
+
+    .demo-btn.clear:hover {
+      background: #e6e6e6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .demo-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .demo-btn {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Notification Container -->
+  <div class="notification-container" id="notificationContainer"></div>
+
+  <!-- Demo Content -->
+  <div class="demo-container">
+    <h1>Bộ Notification System</h1>
+    <p>Click vào các nút bên dưới để xem các loại thông báo khác nhau</p>
+    
+    <div class="demo-buttons">
+      <button class="demo-btn success" onclick="showNotification('success', 'Thành công!', 'Thao tác đã được thực hiện thành công.')">
+        <i class="iconsax" icon-name="tick-circle"></i> Success
+      </button>
+      <button class="demo-btn error" onclick="showNotification('error', 'Lỗi!', 'Đã xảy ra lỗi trong quá trình xử lý.')">
+        <i class="iconsax" icon-name="close-circle"></i> Error
+      </button>
+      <button class="demo-btn warning" onclick="showNotification('warning', 'Cảnh báo!', 'Vui lòng kiểm tra lại thông tin trước khi tiếp tục.')">
+        <i class="iconsax" icon-name="warning-2"></i> Warning
+      </button>
+      <button class="demo-btn info" onclick="showNotification('info', 'Thông tin', 'Đây là một thông báo thông tin quan trọng.')">
+        <i class="iconsax" icon-name="info-circle"></i> Info
+      </button>
+      <button class="demo-btn clear" onclick="clearAllNotifications()">
+        <i class="iconsax" icon-name="trash"></i> Xóa tất cả
+      </button>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <h3>Tính năng:</h3>
+      <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+        <li>✅ 4 loại thông báo: Success, Error, Warning, Info</li>
+        <li>✅ Tự động ẩn sau 5 giây</li>
+        <li>✅ Thanh tiến trình hiển thị thời gian còn lại</li>
+        <li>✅ Nút đóng thủ công</li>
+        <li>✅ Hiệu ứng slide in/out mượt mà</li>
+        <li>✅ Responsive design</li>
+        <li>✅ Gradient background đẹp mắt</li>
+        <li>✅ Icon tương ứng với từng loại thông báo</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Notification JavaScript -->
+  <script src="../assets/js/notification.js"></script>
+  <script>
+    // Demo functions
+    function showNotification(type, title, message, duration = 5000) {
+      return notificationSystem.show(type, title, message, duration);
+    }
+
+    function clearAllNotifications() {
+      notificationSystem.clearAll();
+    }
+
+    // Example usage in real application:
+    // showNotification('success', 'Đăng nhập thành công!', 'Chào mừng bạn quay trở lại.');
+    // showNotification('error', 'Lỗi đăng nhập', 'Email hoặc mật khẩu không đúng.');
+    // showNotification('warning', 'Cảnh báo bảo mật', 'Vui lòng đổi mật khẩu định kỳ.');
+    // showNotification('info', 'Cập nhật hệ thống', 'Hệ thống sẽ được bảo trì từ 2:00 - 4:00 sáng.');
+  </script>
+</body>
+
+</html>
