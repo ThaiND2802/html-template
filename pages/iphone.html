@@ -10,6 +10,7 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="../assets/css/main.css">
   <!-- Layout CSS -->
+  <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/layout-category.css">
   <!-- Home CSS -->
   <link rel="stylesheet" href="../assets/css/iphone.css">
@@ -29,7 +30,7 @@
       <div class="header">
         <div class="header-logo">
           <a href="/">
-            <img src="../assets/img/logo.png" alt="logo">
+            <img src="../assets/img/logo-shop-dunk.png" alt="logo">
           </a>
         </div>
         <div class="header-search">
@@ -38,16 +39,11 @@
             <input type="text" placeholder="Search">
           </form>
         </div>
-        <div class="header-options">
-          <div class="header-options-item">
-            <i class="iconsax" icon-name="shopping-cart"></i>
-            <span class="header-option-item-text">Giỏ hàng</span>
-          </div>
-          <div class="header-options-item">
-            <i class="iconsax" icon-name="user-2"></i>
-            <span class="header-option-item-text">Tài khoản</span>
-          </div>
-          <!-- Language Selector -->
+        <a href="/" class="header-options-cart">
+          <i class="iconsax" icon-name="shopping-cart"></i>
+          <span class="header-option-item-text">Giỏ hàng</span>
+        </a>
+        <div class="header-options-language">
           <div class="header-options-item">
             <div class="language-selector">
               <button id="current-lang">
@@ -207,7 +203,7 @@
                 <div class="categories-filter-item-img">
                   <img src="../assets/img/categories-filter/keyboards.png" alt="category-8">
                 </div>
-                <h3 class="categories-filter-item-text">Bàn phím</h3>
+                <h3 class="categories-filter-item-text">Chuột/Bàn phím</h3>
               </a>
             </div>
             <div class="categories-filter-item-wrapper">
@@ -309,7 +305,7 @@
                 Giá thấp đến cao
               </a>
               <a href="/" class="order-option">
-                <i class="iconsax" icon-name="sort" ></i>
+                <i class="iconsax" icon-name="sort"></i>
                 Giá cao đến thấp
               </a>
               <a href="/" class="order-option">

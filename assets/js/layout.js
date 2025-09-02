@@ -24,3 +24,9 @@ document.addEventListener('click', (e) => {
     selector.classList.remove('show');
   }
 });
+document.querySelectorAll(".footer-block").forEach(block => {
+  block.addEventListener("click", () => {
+    block.classList.toggle("active");
+  });
+});
+

@@ -10,15 +10,9 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="../assets/css/main.css">
   <!-- Layout CSS -->
+  <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/layout-new-detail.css">
-  <!-- Slick CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
 
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -27,7 +21,7 @@
       <div class="header">
         <div class="header-logo">
           <a href="/">
-            <img src="../assets/img/logo.png" alt="logo">
+            <img src="../assets/img/logo-shop-dunk.png" alt="logo">
           </a>
         </div>
         <div class="header-search">
@@ -36,16 +30,11 @@
             <input type="text" placeholder="Search">
           </form>
         </div>
-        <div class="header-options">
-          <div class="header-options-item">
-            <i class="iconsax" icon-name="shopping-cart"></i>
-            <span class="header-option-item-text">Giỏ hàng</span>
-          </div>
-          <div class="header-options-item">
-            <i class="iconsax" icon-name="user-2"></i>
-            <span class="header-option-item-text">Tài khoản</span>
-          </div>
-          <!-- Language Selector -->
+        <a href="/" class="header-options-cart">
+          <i class="iconsax" icon-name="shopping-cart"></i>
+          <span class="header-option-item-text">Giỏ hàng</span>
+        </a>
+        <div class="header-options-language">
           <div class="header-options-item">
             <div class="language-selector">
               <button id="current-lang">
@@ -166,7 +155,7 @@
         <div class="footer-block follow-us">
           <div class="footer-logo">
             <a href="/">
-              <img src="../assets/img/logo.png" alt="logo">
+              <img src="../assets/img/logo-shop-dunk.png" alt="logo">
             </a>
           </div>
           <div class="topic">
@@ -269,15 +258,6 @@
     </footer>
   </div>
   <script src="../assets/js/layout.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.category-banner').slick({
-        arrows: true,
-        dots: true,
-      });
-    });
-  </script>
 </body>
 
 </html>
